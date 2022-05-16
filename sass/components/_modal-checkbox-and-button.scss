@@ -1,0 +1,37 @@
+.form-checkbox__lable {
+    position: relative;
+    @include centeredFlex($type: flex);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @include text-size(14px, 1.714);
+  }
+  .form-checkbox__input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  .form-checkbox__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    background-image: url(../images/check.svg);
+  }
+  .form-checkbox__input:checked + .form-checkbox__icon {
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkactive.svg);
+    @include animation(background-image)
+  }
+  .form-checkbox__download {
+    color: var(--accent-color);
+  }
+  .form-button{
+    @include centeredFlex($type: flex);
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+  }

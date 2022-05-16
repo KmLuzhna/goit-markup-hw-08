@@ -1,0 +1,64 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-list {
+  
+    @include for-desktop {
+      display: flex;
+      align-items: baseline;
+    }
+    
+  }
+  .contact-info {
+    @include for-desktop {
+      margin-right: 70px;
+    }
+  }
+  .addres-info {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+    
+    
+    @include for-desktop {
+      margin-top: 20px
+    }
+  }
+  .address-list {
+    width: 231px;
+    
+    &__item:not(:first-child) {
+        margin-top: 9px;
+      }
+  }
+
+  .address-list__map {
+    color: var(--primary-white-color);
+    @include text-size(14px, 1.71, $spacing: 0.03em);
+    font-style: normal;
+    text-decoration-line: none;
+    @include animation(color);
+
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);}
+  }
+  
+  .address-list__link {
+    color: var(--whitecolor-60color);
+    @include text-size(14px, 1.71, $spacing: 0.03em);
+    font-style: normal;
+    text-decoration-line: none;
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);}
+  }

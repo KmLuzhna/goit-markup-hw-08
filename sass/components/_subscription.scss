@@ -1,0 +1,73 @@
+.subscription {
+  @media screen and (max-width: 767px) {
+    ustify-content: center;
+    text-align: center;
+    flex: column;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  @include for-desktop {
+    margin-left: 89px;
+  }
+    
+  }
+  .subscription__title {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+  }
+  .subscription__input {
+    width: auto;
+    min-width: 290px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px var(--box-shadow-color));
+    border-radius: 4px;
+    background-color: transparent;
+
+    @include for-mobile {
+      width: 450px;
+    }
+
+    @include for-desktop {
+      width: 358px;
+    }
+
+    &::placeholder {
+      @include text-size(16px, 1.25, $spacing: 0.03em);
+        color: var(--whitecolor-60color);
+      }
+    
+    &:focus-visible {
+        outline: 0px transparent;
+      }
+    &:focus-within {
+        border: 1px solid var(--accent-color);
+        @include animation(border-color);
+        @include text-size(16px, 1.25, $spacing: 0.03em);
+        color: var(--whitecolor-60color);
+      }
+  }
+  
+  .subscription__button {
+    padding: 0px;
+    width: 200px;
+    height: 50px;
+    @media screen and (max-width: 767px) {
+      @include centeredFlex($type: flex);
+      margin: 20px auto 0 auto;
+    }
+    
+
+    @include for-desktop {
+      @include centeredFlex($type: inline-flex);
+      margin-left: 10px;
+    }
+  }
+  .subscription__icon {
+    margin-left: 10px;
+  }

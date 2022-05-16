@@ -1,0 +1,33 @@
+.logo {
+    font-family: 'Raleway';
+    color: var(--accent-color);
+    font-weight: 700;
+    text-decoration-line: none;
+
+    @media screen and (max-width: 1999px) {
+      @include text-size(24px, 1.17, $spacing: 0.03em);
+    }
+    
+    @include for-desktop {
+      @include text-size(26px, 1.19, $spacing: 0.03em);
+    }
+
+    &__header {
+        padding: 24px 0 25px;
+        color: var(--logo-black);
+      }
+    &__footer-accent {
+        color: var(--primary-white-color);
+      }
+  }
+  
+  .logo__footer {
+    
+    @media screen and (max-width: 767px){
+      @include centeredFlex($type: flex);
+    }
+
+    @include for-desktop {
+      margin-bottom: 20px;
+    }
+  }
