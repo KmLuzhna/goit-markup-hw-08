@@ -4,6 +4,12 @@
   }
   
   .footer-list {
+    @include for-tablet-only {
+      align-items: baseline;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
     @include for-desktop {
       display: flex;
@@ -12,6 +18,11 @@
     
   }
   .contact-info {
+    @include for-tablet-only {
+      text-align: center;
+      margin-right: 165px;
+    }
+
     @include for-desktop {
       margin-right: 70px;
     }
@@ -21,7 +32,6 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      margin-top: 20px;
       margin-bottom: 60px;
     }
     

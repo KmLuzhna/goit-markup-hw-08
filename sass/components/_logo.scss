@@ -4,8 +4,11 @@
     font-weight: 700;
     text-decoration-line: none;
 
-    @media screen and (max-width: 1999px) {
+    @media screen and (max-width: 1199px) {
       @include text-size(24px, 1.17, $spacing: 0.03em);
+    }
+    @media screen and (max-width: 767px){
+      padding: 16px 0;
     }
     
     @include for-desktop {
@@ -20,14 +23,10 @@
         color: var(--primary-white-color);
       }
   }
-  
+
   .logo__footer {
-    
+    margin-bottom: 20px;
     @media screen and (max-width: 767px){
       @include centeredFlex($type: flex);
-    }
-
-    @include for-desktop {
-      margin-bottom: 20px;
     }
   }

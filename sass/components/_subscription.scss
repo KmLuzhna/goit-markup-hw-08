@@ -1,6 +1,5 @@
 .subscription {
-  @media screen and (max-width: 767px) {
-    ustify-content: center;
+  @media screen and (max-width: 1199px) {
     text-align: center;
     flex: column;
     display: flex;
@@ -57,7 +56,7 @@
     padding: 0px;
     width: 200px;
     height: 50px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1999px) {
       @include centeredFlex($type: flex);
       margin: 20px auto 0 auto;
     }
