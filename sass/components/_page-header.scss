@@ -138,3 +138,24 @@
       margin-right: 10px;
     }
   }
+  /*MENU*/
+  .menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    /*@include for-tablet {
+      display: none;
+    }*/
+  }
+  .icon__close {
+    display: none;
+  }
+  .is-open .icon__close {
+    display: block;
+  }
+  .is-open .icon__menu {
+    display: none;
+  }
