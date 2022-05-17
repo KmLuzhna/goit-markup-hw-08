@@ -26,12 +26,30 @@
                     <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
                 </ul>
-                <button type="button" class="menu__button is-open" data-menu-button>
+                <button type="button" class="menu__button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                     <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="icon__menu" href="./images/symbol-defs.svg#menu_40px"></use>
-                        <use class="icon__close" href="./images/symbol-defs.svg#close_40px"></use>
+                        <use class="icon__close" href="./images/symbol-defs.svg#menu_40px"></use>
+                        <use class="icon__menu" href="./images/symbol-defs.svg#close_40px"></use>
                     </svg>
                 </button>
+                <!--Mobile-menu-->
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="mob-menu">
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="#">Студия</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="#">Контакты</a></li>
+                    </ul>
+                    <div class="mob-menu">
+                        <p class="mob__tel">+38 096 111 11 11</p>
+                        <p class="mob__mail">info@devstudio.com</p>
+                        <ul class="mob-social">
+                            <li class="mob-social__item"><a class="mob-social__link" href="#">Instagram</a></li>
+                            <li class="mob-social__item"><a class="mob-social__link" href="#">Twitter</a></li>
+                            <li class="mob-social__item"><a class="mob-social__link" href="#">Facebook</a></li>
+                            <li class="mob-social__item"><a class="mob-social__link" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <ul class="auth-nav">
                 <li class="auth-nav__item">
