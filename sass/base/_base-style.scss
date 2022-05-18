@@ -42,6 +42,9 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;*/
+    @media screen and (max-width:767px) {
+      max-width: 480px
+    }
 
   
     @include for-tablet {
