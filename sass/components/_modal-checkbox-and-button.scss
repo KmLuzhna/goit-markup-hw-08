@@ -3,7 +3,11 @@
     @include centeredFlex($type: flex);
     margin-top: 20px;
     margin-bottom: 30px;
-    @include text-size(14px, 1.714);
+    @include text-size(12px, 1.167);
+
+    @include for-desktop {
+      @include text-size(14px, 1.714);
+    }
   }
   .form-checkbox__input {
     position: absolute;

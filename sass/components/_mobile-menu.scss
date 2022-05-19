@@ -6,9 +6,9 @@
     background-color: transparent;
     z-index: 3;
 
-    /*@include for-tablet {
+    @include for-tablet {
       display: none;
-    }*/
+    }
   }
   .icon__close {
     display: none;

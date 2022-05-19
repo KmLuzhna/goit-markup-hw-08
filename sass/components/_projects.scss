@@ -6,9 +6,22 @@
   }
   
   .projects__item {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+    width: 100%;
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @include for-tablet {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 60px) / 2);
+    }
+    @include for-desktop {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 90px) / 3);
+    }
   }
 
   .projects__link {

@@ -1,9 +1,26 @@
   .filters {
-    @include centeredFlex($type: flex);
-    margin-bottom: 50px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 70px;
+
     &__item:not(:last-child) {
       margin-right: 8px;
+    }
+
+    @media screen and (max-width:767px) {
+      &__item:nth-last-child(-n + 2) {
+        margin-top: 15px;
+      }
+    }
+    
+    @include for-tablet {
+      @include centeredFlex($type: flex);
+      margin-bottom: 15px;
+    }
+    @include for-desktop {
+      margin-bottom: 50px;
     }
 }
 

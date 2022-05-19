@@ -4,10 +4,14 @@
   .form__title{
     font-family: 'Roboto';
     font-weight: 700;
-    @include text-size(20px, 1.15);
+    @include text-size(20px, 1.5);
     text-align: center;
     color: var(--title-color);
     margin-bottom: 12px;
+
+    @include for-desktop {
+      @include text-size(20px, 1.15);
+    }
     
   }
   
