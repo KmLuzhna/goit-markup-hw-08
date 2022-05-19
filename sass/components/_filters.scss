@@ -17,7 +17,7 @@
     
     @include for-tablet {
       @include centeredFlex($type: flex);
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
     @include for-desktop {
       margin-bottom: 50px;
