@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid var(--border-color);
 }
 .nav {
   @include for-tablet {
@@ -60,7 +61,7 @@
   }
   }
 
-  .active__link {
+  .active-link {
     position: relative;
     color: var(--accent-color);
 
@@ -79,16 +80,7 @@
 
   .auth-nav {
     display: none;
-    /*display: flex;
-
-    &__item:not(:last-child) {
-        margin-right: 50px;
-      }*/
-
-      @include for-mobile {
-        /*вставити іконку і спозиціонувати*/
-      }
-
+    
       @include for-tablet {
         display: block;
         
