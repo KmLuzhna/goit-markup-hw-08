@@ -32,26 +32,18 @@
   }
   
   .container {
-    max-width: 1200px;
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /*width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;*/
+
     @media screen and (max-width:767px) {
       max-width: 480px
     }
 
-  
-    @include for-tablet {
+    @include for-tablet-only {
       max-width: 768px;
-      margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
     }
 
     @include for-desktop {
@@ -60,7 +52,10 @@
   }
   
   .section {
-    padding: 94px 0px;
+    padding: 60px 0px;
+    @include for-desktop {
+      padding: 94px 0px;
+    }
   }
   .main-section,
   .page-footer {
@@ -70,10 +65,13 @@
   .section-title {
     color: var(--title-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
+    @media screen and (max-width: 1199px) {
+      @include text-size(28px, 1.178, $spacing: 0.03em);
+    }
+    @include for-desktop {
+      @include text-size(36px, 1.167, $spacing: 0.03em);
+    }
   }
 
   .button {
@@ -90,4 +88,8 @@
     font-weight: 700;
     @include text-size(14px, 1.14, $spacing: 0.03em);
     text-transform: uppercase;
+
+    @media screen and (max-width:767px) {
+      text-align: center;
+    }
   }
