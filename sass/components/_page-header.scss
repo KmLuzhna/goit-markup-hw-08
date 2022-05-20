@@ -2,7 +2,7 @@
   position: relative;
   border-bottom: 1px solid var(--border-color);
 }
-.nav {
+.container__page-header {
   @include for-tablet {
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
   }
   }
 
-  .active-link {
+    .site-nav__link--active {
     position: relative;
     color: var(--accent-color);
 

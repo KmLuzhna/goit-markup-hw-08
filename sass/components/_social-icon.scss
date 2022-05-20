@@ -2,12 +2,12 @@
     @include centeredFlex($type: flex);
     margin-top: 16px;
 
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 10px;
       }
   }
-  
-  .social-link {
+
+  .ssocial-list__link {
     @include centeredFlex($type: flex);
     width: 44px;
     height: 44px;

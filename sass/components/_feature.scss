@@ -1,9 +1,5 @@
 .feature-list {
-    /*display: flex;
-    padding: 0px;
-    margin: 0px;*/
-
-
+  
     @include for-tablet {
       display: flex;
       flex-wrap: wrap;

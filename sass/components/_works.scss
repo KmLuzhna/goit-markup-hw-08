@@ -1,4 +1,4 @@
-.work {
+.section--no-padding-top{
   @media screen and (max-width: 1199px ) {
     display: none; 
   }
@@ -47,7 +47,7 @@
       
     }
   }
-  .work-picture__text {
+  .work-list__text {
     display: none;
 
     @include for-desktop {
