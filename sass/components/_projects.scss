@@ -13,7 +13,7 @@
     
     height: 404px;
 
-    @media screen and (max-width: 767px) {
+    @include for-mobile-only {
       width: 450px;
       &:not(:last-child) {
         margin-bottom: 30px;

@@ -14,6 +14,7 @@
   --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
+/*BREAKPOINTS*/
 .body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -934,7 +935,7 @@ summary {
   color: var(--primary-white-color);
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .footer-social__title {
     text-align: center;
   }
@@ -1240,9 +1241,9 @@ summary {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     max-width: 768px;
     margin-left: -30px;
   }
@@ -1305,7 +1306,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .client-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1318,7 +1319,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client-list {
     width: 480px;
   }
@@ -1345,7 +1346,7 @@ summary {
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .client-list__item {
     margin-top: 30px;
     margin-left: 30px;

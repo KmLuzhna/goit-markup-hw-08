@@ -30,7 +30,7 @@
     margin-bottom: 20px;
     color: var(--primary-white-color);
 
-    @media screen and (max-width: 1999px) {
+    @include for-mobile-and-tablet {
       text-align: center;
     }
   }

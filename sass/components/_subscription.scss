@@ -1,5 +1,5 @@
 .subscription {
-  @media screen and (max-width: 1199px) {
+  @include for-mobile-and-tablet {
     text-align: center;
     flex: column;
     display: flex;

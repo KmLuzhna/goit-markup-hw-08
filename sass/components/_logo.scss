@@ -4,10 +4,10 @@
     font-weight: 700;
     text-decoration-line: none;
 
-    @media screen and (max-width: 1199px) {
+    @include for-mobile-and-tablet {
       @include text-size(24px, 1.17, $spacing: 0.03em);
     }
-    @media screen and (max-width: 767px){
+    @include for-mobile-only{
       padding: 16px 0;
     }
     

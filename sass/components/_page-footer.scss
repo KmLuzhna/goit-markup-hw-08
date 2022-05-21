@@ -28,7 +28,7 @@
     }
   }
   .addres-info {
-    @media screen and (max-width: 767px) {
+    @include for-mobile-only {
       display: flex;
       justify-content: center;
       text-align: center;
