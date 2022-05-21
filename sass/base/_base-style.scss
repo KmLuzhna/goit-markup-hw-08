@@ -68,6 +68,7 @@
     text-align: center;
     @media screen and (max-width: 1199px) {
       @include text-size(28px, 1.178, $spacing: 0.03em);
+      margin-bottom: 30px;
     }
     @include for-desktop {
       @include text-size(36px, 1.167, $spacing: 0.03em);

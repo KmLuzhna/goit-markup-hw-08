@@ -4,7 +4,6 @@
   background-size: cover;
   margin: 0 auto;
   
-  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
@@ -24,7 +23,6 @@
   
 
   @include for-tablet {
-    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),

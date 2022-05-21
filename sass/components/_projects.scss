@@ -10,7 +10,6 @@
   
   .projects__item {
     width: 100%;
-    
     height: 404px;
 
     @include for-mobile-only {
@@ -19,11 +18,10 @@
         margin-bottom: 30px;
       }
     }
-    @include for-tablet {
+    @include for-tablet-only {
       width: 354px;
       margin-top: 30px;
       margin-left: 30px;
-      text-align: center;
       flex-basis: calc((100% - 60px) / 2);
       &:nth-child(-n + 2) {
           height: 440px;
@@ -66,11 +64,18 @@
     color: var(--text-color);
     @include text-size(16px, 1.88, $spacing: 0.03em);
   }
-  .project1 {
+  
+  .projects__link--another-height {
     @include for-tablet-only {
-      padding-bottom: 56px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    } 
+  }
+  .projects__content--another-height {
+    @include for-tablet-only {
+      flex-grow: 1;
     }
-    
   }
 
   .projects__picture {

@@ -7,9 +7,6 @@
     @include for-mobile-and-tablet {
       @include text-size(24px, 1.17, $spacing: 0.03em);
     }
-    @include for-mobile-only{
-      padding: 16px 0;
-    }
     
     @include for-desktop {
       @include text-size(26px, 1.19, $spacing: 0.03em);
