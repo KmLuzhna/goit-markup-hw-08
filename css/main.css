@@ -1876,6 +1876,36 @@ summary {
   height: 294px;
 }
 
+.projects__picture--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .projects__picture--mobile {
+    display: block;
+  }
+}
+
+.projects__picture--tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects__picture--tablet {
+    display: block;
+  }
+}
+
+.projects__picture--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__picture--desktop {
+    display: block;
+  }
+}
+
 .projects-action {
   position: absolute;
   top: 50%;

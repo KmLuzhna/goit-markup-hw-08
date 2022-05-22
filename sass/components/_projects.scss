@@ -83,6 +83,24 @@
     overflow: hidden;
     height: 294px;
   }
+  .projects__picture--mobile {
+    display: none;
+    @include for-mobile-only {
+      display: block;
+    }
+  }
+    .projects__picture--tablet {
+      display: none;
+      @include for-tablet-only {
+        display: block;
+      }
+    }
+  .projects__picture--desktop {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+  }
   
   .projects-action {
     position: absolute;
