@@ -23,7 +23,7 @@
   .site-nav {
     display: none;
 
-    @include for-mobile {
+    @include for-mobile-only {
       width: 480px;
     }
 

@@ -439,7 +439,7 @@ summary {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     width: 480px;
   }
@@ -700,7 +700,7 @@ summary {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     width: 480px;
   }
